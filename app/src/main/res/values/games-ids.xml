@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+    <!-- app_id -->
+    <string name="app_id" translatable="false">848314936857</string>
+    <!-- package_name -->
+    <string name="package_name" translatable="false">com.toposdeus.personajesmexicanos</string>
+    <!-- achievement Principiante -->
+    <string name="achievement_principiante" translatable="false">CgkImdyKnNgYEAIQAQ</string>
+    <!-- achievement Intemedio -->
+    <string name="achievement_intemedio" translatable="false">CgkImdyKnNgYEAIQAg</string>
+    <!-- achievement Experto -->
+    <string name="achievement_experto" translatable="false">CgkImdyKnNgYEAIQAw</string>
+    <!-- leaderboard Cercano a la fama -->
+    <string name="leaderboard_cercano_a_la_fama" translatable="false">CgkImdyKnNgYEAIQBA</string>
+</resources>
