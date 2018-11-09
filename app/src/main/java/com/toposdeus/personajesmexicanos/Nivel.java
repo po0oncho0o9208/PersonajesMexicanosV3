@@ -43,7 +43,7 @@ public class Nivel extends Activity implements OnClickListener {
 
     private AdView mBottomBanner;
 
-    public static Drawable resizeImage(Context ctx, int resId, int w, int h) {
+    public static Drawable resizeImag(Context ctx, int resId, int w, int h) {
 
         // cargamos la imagen de origen
         Bitmap BitmapOrg = BitmapFactory.decodeResource(ctx.getResources(), resId);
@@ -155,12 +155,12 @@ public class Nivel extends Activity implements OnClickListener {
                     int o = j + (i * 3);
 
 
-                    states.addState(new int[]{android.R.attr.state_pressed}, drawbg( getResources().obtainTypedArray(
+                    states.addState(new int[]{android.R.attr.state_pressed}, drawbg(getResources().obtainTypedArray(
                             imagenes[nivel]).getDrawable(j + (i * 3)), j + (i * 3), 60));
-                    states.addState(new int[]{android.R.attr.state_enabled}, drawbg( getResources().obtainTypedArray(
+                    states.addState(new int[]{android.R.attr.state_enabled}, drawbg(getResources().obtainTypedArray(
                             imagenes[nivel]).getDrawable(j + (i * 3)), j + (i * 3), 0));
                     //states.addState(new int[]{android.R.attr.state_enabled}, drawbg(resizeImagen(this, getResources().obtainTypedArray(
-                          //  imagenes[nivel]).getResourceId(j + (i * 3), 1), ancho, ancho), j + (i * 3), 0));
+                    //  imagenes[nivel]).getResourceId(j + (i * 3), 1), ancho, ancho), j + (i * 3), 0));
                     btnTag.setBackground(states);
                     final int finalJ = j;
                     final int finalI = i;
@@ -253,5 +253,6 @@ public class Nivel extends Activity implements OnClickListener {
             mBottomBanner.pause();
         }
     }
+
 
 }

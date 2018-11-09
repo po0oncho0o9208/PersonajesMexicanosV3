@@ -13,6 +13,7 @@ public class SoundManager {
     private float leftVolume = 1.0f;
     private float rightVolume = 1.0f;
 
+
     // La clase SoundPool administra y ejecuta todos los recursos de audio de la
     // aplicacion.
 
@@ -32,4 +33,6 @@ public class SoundManager {
     public void play(int idSonido) {
         sndPool.play(idSonido, leftVolume, rightVolume, 1, 0, rate);
     }
+
+
 }

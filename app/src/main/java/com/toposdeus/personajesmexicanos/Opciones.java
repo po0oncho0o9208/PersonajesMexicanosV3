@@ -133,13 +133,13 @@ public class Opciones extends FragmentActivity implements OnClickListener, Googl
                 break;
 
             case R.id.botoncomojugar:
-                MenuNiveles.instrucciones(this, getLayoutInflater());
+              //  MenuNiveles.instrucciones(this, getLayoutInflater());
                 break;
             case R.id.botoncomparte:
 
                 if (googleapiClient != null) {
                     if (googleapiClient.isConnected()) {
-                       // Games.Achievements.increment(googleapiClient, getString(R.string.achievement_compartenos), 1);
+                        // Games.Achievements.increment(googleapiClient, getString(R.string.achievement_compartenos), 1);
                     }
                 }
                 Intent intent = new Intent(Intent.ACTION_SEND);

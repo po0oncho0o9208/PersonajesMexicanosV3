@@ -38,7 +38,6 @@ public class MenuNiveles extends Activity implements OnClickListener {
 
     public static void instrucciones(Context context, LayoutInflater inflater) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(context);
-
         View v = inflater.inflate(R.layout.dialogocomojugar, null);
         builder.setView(v);
         final AlertDialog dialog = builder.create();
@@ -60,14 +59,14 @@ public class MenuNiveles extends Activity implements OnClickListener {
         Button botonentendido = (Button) v.findViewById(R.id.botonok);
         botonentendido.setTypeface(Metodos.fuente(context));
         botonentendido.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.cancel();
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.cancel();
+                        }
                     }
-                }
-        );
-        dialog.show();
+            );
+            dialog.show();
     }
 
     @Override
